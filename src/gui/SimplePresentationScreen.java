@@ -27,10 +27,10 @@ public class SimplePresentationScreen extends JFrame {
 	private JTabbedPane tabbedPane;
 	private Student studentData;
 	private JTextField textField;
-	private JTextField txtGuidi;
-	private JTextField txtGiulianaCecilia;
-	private JTextField txtGiuliguidigmailcom;
-	private JTextField txtHttpsgithubcomgiulianaguidi;
+	private JTextField txtFirstName;
+	private JTextField txtLastName;
+	private JTextField txtEmail;
+	private JTextField txtGithub;
 	private JLabel lblNewLabel_6;
 	private JLabel lblNewLabel_7;
 
@@ -92,29 +92,29 @@ public class SimplePresentationScreen extends JFrame {
 		tabInformation.add(textField);
 		textField.setColumns(10);
 		
-		txtGuidi = new JTextField();
-		txtGuidi.setBounds(104, 43, 285, 20);
-		txtGuidi.setText(studentData.getFirstName());
-		txtGuidi.setColumns(10);
-		tabInformation.add(txtGuidi);
+		txtFirstName = new JTextField();
+		txtFirstName.setBounds(104, 43, 285, 20);
+		txtFirstName.setText(studentData.getFirstName());
+		txtFirstName.setColumns(10);
+		tabInformation.add(txtFirstName);
 		
-		txtGiulianaCecilia = new JTextField();
-		txtGiulianaCecilia.setBounds(104, 74, 285, 20);
-		txtGiulianaCecilia.setText(studentData.getLastName());
-		txtGiulianaCecilia.setColumns(10);
-		tabInformation.add(txtGiulianaCecilia);
+		txtLastName = new JTextField();
+		txtLastName.setBounds(104, 74, 285, 20);
+		txtLastName.setText(studentData.getLastName());
+		txtLastName.setColumns(10);
+		tabInformation.add(txtLastName);
 		
-		txtGiuliguidigmailcom = new JTextField();
-		txtGiuliguidigmailcom.setBounds(104, 105, 285, 20);
-		txtGiuliguidigmailcom.setText(studentData.getMail());
-		txtGiuliguidigmailcom.setColumns(10);
-		tabInformation.add(txtGiuliguidigmailcom);
+		txtEmail = new JTextField();
+		txtEmail.setBounds(104, 105, 285, 20);
+		txtEmail.setText(studentData.getMail());
+		txtEmail.setColumns(10);
+		tabInformation.add(txtEmail);
 		
-		txtHttpsgithubcomgiulianaguidi = new JTextField();
-		txtHttpsgithubcomgiulianaguidi.setBounds(104, 130, 285, 20);
-		txtHttpsgithubcomgiulianaguidi.setText(studentData.getGithubURL());
-		txtHttpsgithubcomgiulianaguidi.setColumns(10);
-		tabInformation.add(txtHttpsgithubcomgiulianaguidi);
+		txtGithub = new JTextField();
+		txtGithub.setBounds(104, 130, 285, 20);
+		txtGithub.setText(studentData.getGithubURL());
+		txtGithub.setColumns(10);
+		tabInformation.add(txtGithub);
 		contentPane.add(tabbedPane);
 		
 		lblNewLabel_6 = new JLabel(new ImageIcon(SimplePresentationScreen.class.getResource(studentData.getPathPhoto())));
